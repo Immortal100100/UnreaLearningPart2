@@ -1,0 +1,42 @@
+[
+	{
+		"file": "C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\Source\\UnreaLearningPart2\\MyActor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\.vscode\\compileCommands_Default\\UnreaLearningPart2.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\Source\\UnreaLearningPart2\\MyActor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\.vscode\\compileCommands_Default\\UnreaLearningPart2.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\Source\\UnreaLearningPart2\\UnreaLearningPart2.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\.vscode\\compileCommands_Default\\UnreaLearningPart2.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\Source\\UnreaLearningPart2\\UnreaLearningPart2.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\.vscode\\compileCommands_Default\\UnreaLearningPart2.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\Source\\UnreaLearningPart2\\UnreaLearningPart2.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\kunal\\Gamedev\\Unreal\\UnreaLearningPart2\\.vscode\\compileCommands_Default\\UnreaLearningPart2.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	}
+]
