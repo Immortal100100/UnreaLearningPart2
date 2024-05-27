@@ -21,15 +21,30 @@ void AMyActor::BeginPlay()
 // Called every frame
 void AMyActor::Tick(float DeltaTime)
 {
-	FVector CurrentLocation;
 	Super::Tick(DeltaTime);
+	ToFroMotion(DeltaTime);
+}
+
+void AMyActor:: ToFroMotion(float DeltaTime)
+{
+	FVector CurrentLocation;
 	CurrentLocation = GetActorLocation();
 	CurrentLocation += MovementSpeed*DeltaTime;
 	SetActorLocation(CurrentLocation);
-	DistanceMoved = FVector::Dist(StartLocation,CurrentLocation);
-	if(DistanceMoved >= MoveDistance){
+	if(DestinationReached(CurrentLocation)){
+		FVector MoveDirection = MovementSpeed.GetSafeNormal();
+		StartLocation += MoveDistance*MoveDirection;
+		float offset = FVector::Dist(StartLocation,GetActorLocation());
+		SetActorLocation(StartLocation);
+		FString s = GetActorNameOrLabel();
+		UE_LOG(LogTemp,Error,TEXT("jbuj %s"),*s);
 		MovementSpeed = -MovementSpeed;
-		StartLocation = GetActorLocation();
 	}
+}
+
+bool AMyActor:: DestinationReached(FVector CurrentLocation) const
+{
+	float DistanceMoved = FVector::Dist(StartLocation,CurrentLocation);
+	return DistanceMoved >= MoveDistance;
 }
 

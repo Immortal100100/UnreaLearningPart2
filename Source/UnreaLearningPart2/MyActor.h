@@ -25,9 +25,15 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	FVector MovementSpeed = FVector(0,100,0);
-	UPROPERTY(VisibleAnywhere)
-	float DistanceMoved;
+	//UPROPERTY(VisibleAnywhere)
+	//float DistanceMoved;
 	UPROPERTY(EditAnywhere)
 	float MoveDistance = 500;
 	FVector StartLocation;
+	void ToFroMotion(float DeltaTime);
+	bool DestinationReached(FVector CurrentLocation) const;
+	UPROPERTY(EditAnyWhere,Category = "Rotator")
+	FRotator RotationSpeed = FRotator(0,0,0);
+	UPROPERTY(EditAnyWhere)
+	bool FullRotation;
 };
