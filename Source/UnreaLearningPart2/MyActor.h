@@ -32,8 +32,13 @@ public:
 	FVector StartLocation;
 	void ToFroMotion(float DeltaTime);
 	bool DestinationReached(FVector CurrentLocation) const;
+
 	UPROPERTY(EditAnyWhere,Category = "Rotator")
 	FRotator RotationSpeed = FRotator(0,0,0);
 	UPROPERTY(EditAnyWhere)
 	bool FullRotation;
+	void Rotator(float DeltaTime);
+	FRotator StartRotation;
+	UPROPERTY(EditAnyWhere)
+	float MaxRotation;
 };

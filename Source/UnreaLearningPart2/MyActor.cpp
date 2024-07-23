@@ -16,6 +16,7 @@ void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
 	StartLocation = GetActorLocation();
+	StartRotation = GetActorRotation();
 }
 
 // Called every frame
@@ -23,6 +24,19 @@ void AMyActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	ToFroMotion(DeltaTime);
+	Rotator(DeltaTime);
+}
+
+void AMyActor:: Rotator(float DeltaTime)
+{
+	FRotator CurrentRotation = GetActorRotation();
+	CurrentRotation += RotationSpeed * DeltaTime;
+	SetActorRotation(CurrentRotation);
+	if(!FullRotation){
+	 if(CurrentRotation.Euler().Z - StartRotation.Euler().Z > MaxRotation || CurrentRotation.Euler().Z - StartRotation.Euler().Z < -MaxRotation ){
+	 	RotationSpeed = FRotator(0,-RotationSpeed.Euler().Z,0) ;
+	 }
+	}
 }
 
 void AMyActor:: ToFroMotion(float DeltaTime)
